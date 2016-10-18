@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">OlaMundo</string>
+    <string name="app_name">Teste Interface</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="Sobrenome">Sobrenome</string>
+    <string name="Nome">Nome</string>
+    <string name="Idade">Idade</string>
+    <string name="Sexo">Sexo</string>
+    <string name="Masculino">Masculino</string>
+    <string name="Feminino">Feminino</string>
+    <string name="Salvar">Salvar</string>
 </resources>
