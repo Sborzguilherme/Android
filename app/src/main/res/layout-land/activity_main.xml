@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/perfil"
+            android:layout_marginRight="@dimen/Espaço_imagem_texto_land"
+
+            android:adjustViewBounds="false"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:text="@string/Salvar_em" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaço_inicial"
+            android:layout_marginTop="@dimen/espaçamento_entre_campos"/>
+
+        <TextView android:text="marcelo56@gmail.com" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaço_inicial"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:hint="Digite o nome aqui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaçamento_entre_campos"/>
+
+        <EditText  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Sobrenome"
+            android:layout_marginBottom="@dimen/espaçamento_entre_campos"/>/
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Celular"
+            android:layout_marginBottom="@dimen/espaçamento_entre_campos"/>
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:layout_marginBottom="@dimen/espaçamento_entre_campos"/>
+            />
+        <EditText
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Residencial"
+            android:layout_marginBottom="@dimen/espaçamento_entre_campos"/>
+
+            />
+        <TextView android:text="@string/Mais_Campos" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#0000FF"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

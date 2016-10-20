@@ -9,4 +9,10 @@
     <string name="Masculino">Masculino</string>
     <string name="Feminino">Feminino</string>
     <string name="Salvar">Salvar</string>
+    <string name="Salvar_em">Salvar em</string>
+    <string name="Celular">Celular</string>
+    <string name="Email">Email</string>
+    <string name="Residencial">Residencial</string>
+    <string name="Mais_Campos">Mais Campos</string>
+    <string name="Telefone">Telefone</string>
 </resources>

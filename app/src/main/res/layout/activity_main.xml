@@ -15,59 +15,130 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView android:text="@string/Nome" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:hint="Digite o nome aqui"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/perfil"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="20dp"/>
 
-            <TextView android:text="@string/Sobrenome" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <EditText  android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
 
-            <TextView android:text="@string/Idade" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+               <ImageView
+
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/perfil_2"
+                   android:id="@+id/icone_perfil"
+                   android:layout_marginRight="20dp"
+                   android:scaleType="fitCenter" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView android:text="@string/Salvar_em" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/espaço_inicial"/>
+
+                <TextView android:text="marcelo56@gmail.com" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/espaço_inicial"/>
+            </LinearLayout>
+
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/perfil_2"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitCenter" />
+
+                    <EditText
+                        android:hint="@string/Nome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/telefone"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitCenter" />
+
+
+                <EditText  android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Telefone"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+
             <EditText
+                android:layout_marginLeft="50dp"
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/Celular"
                 />
 
-            <TextView android:text="@string/Sexo" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:text="@string/Masculino"
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/carta"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitCenter" />
+
+                <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="#0000FF"/>
+                    android:hint="@string/Email"
+                    />
 
-                <RadioButton
-                    android:text="@string/Feminino"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="#FF0000"/>
+            </LinearLayout>
 
-            </RadioGroup>
-            <Button
-                android:layout_marginTop="30dp"
-                android:layout_width="wrap_content"
+            <EditText
+                android:layout_marginLeft="50dp"
+                android:inputType="number"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Salvar"/>
+                android:hint="@string/Residencial"
+                />
+            <TextView android:text="@string/Mais_Campos" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000FF"
+                android:layout_marginLeft="50dp"
+                />
 
         </LinearLayout>
     </ScrollView>
-
-
 
 
 </LinearLayout>
